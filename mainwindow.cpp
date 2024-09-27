@@ -55,3 +55,13 @@ void MainWindow::on_btnDoss_clicked()
 {
     ouvrirFichier();
 }
+
+void MainWindow::on_btnRSA_clicked()
+{
+    btnRSA *bouton = new btnRSA(this);
+    bouton->setProperty("mon_style", true);
+
+    bouton->setStyleSheet("btnRSA#mon_style {background-color: rgb(91, 203, 161); border-radius: 10px; }"
+    "QPushButton#mon_style:hover {background-color: rgb(146, 211, 187); border: 2px dashed rgb(91, 203, 161); }" );
+}
+
